@@ -88,3 +88,39 @@ def hatodik():
         a:int = int(input("Kérek egy számot: "))
     
     print(a ** 0.5)
+
+#7.	A program olvasson be a konzolról két valós számot! 
+
+def hetedik():
+    a:int = int(input("Kérek egy számot:"))
+    b:int = int(input("Kérek még egy számot:"))
+    
+    while not (a > 0 and b > 0):
+        print("0-nál nagyobb számot kell megadni!")
+        a:int = int(input("Kérek egy számot: "))
+        b:int = int(input("Kérek még egy számot: "))
+
+    print(f"Kerület: {2*(a+b)}") 
+    print(f"Terület: {a*b}")   
+
+#1.feladat:	Egy a természettel  Vadászati és Természeti Világkiállításon téged bíztak meg, hogy egy kihelyezett információs tábla részműködését leprogramozd! 
+
+def terkepes():
+    a:str = str(input("Melyik szektort választod?: "))
+
+    if a == "a" or "A":
+        print("Nemzetközi Csarnok, World Conservation Forum 2021")
+    elif a == "b" or a == "B" or a == "e" or a == "E":  
+        print("Kereskedelmi Csarnok")
+    elif a == "c" or a == "C":
+        print("Konferencia-központ Innovációs Showroom")
+    elif a == "d" or a =="D":
+        print("Hal, Víz és Ember")
+    elif a == "f" or a == "F":
+        print("Hagyományos Vadászati Módok Csarnoka")
+    elif a == "g" or a == "G":
+        print("Hazai és nemzetközi Trófeakiállítás, 12. Nyílt Európai Taxiderma-bajnokság, Vadászat 21.században kiállítás")
+    elif a == "h" or a == "H":
+        print("esetben Központi Magyar Kiállítás")
+    else:
+        print("Forduljon a pénztárhoz.")
